@@ -11,17 +11,21 @@
       <a href="./index.html">Go to home</a>
       <h1>Welcome to page 2</h1>
       <header class="header">
-  <a class="logo" href="../index.html">Marvelous Adventures</a>
+  <div class="container wrap-header">
+    <div class="logo-wrapper">
+      <a class="logo" href="../index.html">
+        <img src="../img/logo-min.png" width="98" height="15" />
+      </a>
+    </div>
+    <div class="search-box">
+      <input
+        type="query"
+        name="searchQuery"
+        class="header-input"
+        placeholder="SEARCH"
+        autocomplete="on"
+      />
 
-  <div class="search-box">
-    <input
-      type="query"
-      name="searchQuery"
-      class="header-input"
-      placeholder="Search"
-      autocomplete="on"
-    />
-    <div class="btn-search">
       <svg class="search-icon" width="16" height="16">
         <use href="../img/icon.svg#icon-search"></use>
       </svg>

@@ -7,21 +7,25 @@
     <title>Vanilla App Template</title>
     
     <script type="module" crossorigin src="/vanilla-app-template/assets/index-fac82e35.js"></script>
-    <link rel="stylesheet" href="/vanilla-app-template/assets/index-91ddac12.css">
+    <link rel="stylesheet" href="/vanilla-app-template/assets/index-729599f8.css">
   </head>
   <body>
     <header class="header">
-  <a class="logo" href="../index.html">Marvelous Adventures</a>
+  <div class="container wrap-header">
+    <div class="logo-wrapper">
+      <a class="logo" href="../index.html">
+        <img src="../img/logo-min.png" width="98" height="15" />
+      </a>
+    </div>
+    <div class="search-box">
+      <input
+        type="query"
+        name="searchQuery"
+        class="header-input"
+        placeholder="SEARCH"
+        autocomplete="on"
+      />
 
-  <div class="search-box">
-    <input
-      type="query"
-      name="searchQuery"
-      class="header-input"
-      placeholder="Search"
-      autocomplete="on"
-    />
-    <div class="btn-search">
       <svg class="search-icon" width="16" height="16">
         <use href="../img/icon.svg#icon-search"></use>
       </svg>
@@ -31,19 +35,51 @@
 
     <section class="hero">
   <div class="container">
-    <h2>Web-based platform</h2>
-    <h1>Marvelous Adventures</h1>
-    <p>
+    <h2 class="hero-h2">Web-based platform</h2>
+    <h1 class="hero-main-title">Marvelous Adventures</h1>
+    <p class="hero-text">
       is a web-based platform that provides an immersive experience for users to
       explore and discover a vast collection of Marvel characters and comics.
       Start exploring the Marvelous Adventures now by visiting our Characters
       and Comics sections and discover your new favorites today.
     </p>
-    <a href="">All Characters</a>
-    <img src="../img/mobile/background-hero-min.png" />
+    <a href="#" class="hero-all-characters-btn hero-all-characters-btn-blue">
+      All characters
+    </a>
+
+    <picture>
+      <source
+        srcset="
+          /images/desktop/black-panther-desktop-min.jpg    1x,
+          /images/desktop/black-panther@2x-desctop-min.jpg 2x
+        "
+        media="(min-width: 1440px)"
+      />
+      <source
+        srcset="
+          /images/tablet/black-panther-min.jpg    1x,
+          /images/tablet/black-panther@2x-min.jpg 2x
+        "
+        media="(min-width: 768px)"
+      />
+      <source
+        srcset="
+          /images/mobile/black-panther-min.jpg    1x,
+          /images/mobile/black-panther@2x-min.jpg 2x
+        "
+        media="(max-width: 767px)"
+      />
+
+      <img
+        src="/images/desktop/black-panther-desktop-min.jpg"
+        class="image-card-main-img"
+        alt="Black Panther"
+        width="352"
+      />
+    </picture>
 
     <ul class="galery">
-      <li><img src="../img/mobile/black-panther-min.jpg" /></li>
+      <li><img src="/vanilla-app-template/assets/black-panther-gallery-min-5c4433d3.jpg" /></li>
       <h3>Characters</h3>
       <p>
         With amazing spider-like abilities, teenage science whiz Peter Parker
