@@ -11,39 +11,40 @@
     <a href="#" class="hero-all-characters-btn hero-all-characters-btn-blue">
       All characters
     </a>
+    <div hero-wrapper-img>
+      <div class="line-first">
+        <picture class="line-second">
+          <source
+            srcset="
+              /img/mobile/black-panther-min.jpg    1x,
+              /img/mobile/black-panther@2x-min.jpg 2x
+            "
+            media="(max-width: 767px)"
+          />
+          <source
+            srcset="
+              ../img/tablet/black-panther-min.jpg    1x,
+              ../img/tablet/black-panther@2x-min.jpg 2x
+            "
+            media="(min-width: 768px)"
+          />
+          <source
+            srcset="
+              ../img/desktop/black-panther-desktop-min.jpg    1x,
+              ../img/desktop/black-panther@2x-desctop-min.jpg 2x
+            "
+          />
 
-    <picture>
-      <source
-        srcset="
-          /images/desktop/black-panther-desktop-min.jpg    1x,
-          /images/desktop/black-panther@2x-desctop-min.jpg 2x
-        "
-        media="(min-width: 1440px)"
-      />
-      <source
-        srcset="
-          /images/tablet/black-panther-min.jpg    1x,
-          /images/tablet/black-panther@2x-min.jpg 2x
-        "
-        media="(min-width: 768px)"
-      />
-      <source
-        srcset="
-          /images/mobile/black-panther-min.jpg    1x,
-          /images/mobile/black-panther@2x-min.jpg 2x
-        "
-        media="(max-width: 767px)"
-      />
-
-      <img
-        src="/images/desktop/black-panther-desktop-min.jpg"
-        class="image-card-main-img"
-        alt="Black Panther"
-        width="352"
-      />
-    </picture>
-
-    <ul class="galery">
+          <img
+            src="../img/desktop/black-panther-desktop-min.jpg"
+            class="hero-image-main"
+            width="352"
+            alt="Black Panther"
+          />
+        </picture>
+      </div>
+    </div>
+    <ul class="gallery">
       <li><img src="/img/mobile/black-panther-gallery-min.jpg" /></li>
       <h3>Characters</h3>
       <p>

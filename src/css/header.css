@@ -1,7 +1,12 @@
 .header {  
-  padding: 20px 0;
-  position: relative;
+  padding: 20px 0;  
+  position: sticky;
+  top: 0px;
+  left: 0px;
+  z-index: 1000;
 }
+
+
 .wrap-header{
   display: flex;
   justify-content:space-between;
@@ -10,10 +15,13 @@
 .search-box {
   position: relative;
   width: 108px;
+  /* order: -1; */
 }
-
+.active{
+  background-color: var(--main-bg-color);
+}
 .header-input {
-  padding: 6px 18px;
+  padding: 6px 18px 6px 42px;
   font-size: 12px;
   line-height: 14px;
   border: 1px solid rgba(250, 250, 250, 0.3);
@@ -22,6 +30,11 @@
   width: 100%;
   transition: border-color .1s linear;
   background-color: var(--main-bg-color);
+ 
+  /* order: -1; */
+}
+.header-input::placeholder {
+  font-weight: 500;
   color: var(--main-color);
 }
 
@@ -29,7 +42,8 @@
   position: absolute;
   width: 16px;
   height: 16px;
-  right: -30px;
+  left: 18px;
+  
   top: 6px;
   fill: var(--main-color);
   transition: fill .1s linear;
