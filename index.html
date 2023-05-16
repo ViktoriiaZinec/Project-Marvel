@@ -16,8 +16,8 @@
       rel="stylesheet"
     />
     
-    <script type="module" crossorigin src="/vanilla-app-template/assets/index-38c595ac.js"></script>
-    <link rel="stylesheet" href="/vanilla-app-template/assets/index-04f84364.css">
+    <script type="module" crossorigin src="/vanilla-app-template/assets/header-66cf62a7.js"></script>
+    <link rel="stylesheet" href="/vanilla-app-template/assets/index-f10a68dd.css">
   </head>
   <body>
     <header class="header">
@@ -27,18 +27,22 @@
         <img src="../img/logo-min.png" width="98" height="15" />
       </a>
     </div>
-    <div class="search-box">
-      <svg class="search-icon" width="16" height="16">
-        <use href="/vanilla-app-template/assets/icon-003d551d.svg#icon-search"></use>
-      </svg>
-      <input
-        type="query"
-        name="searchQuery"
-        class="header-input"
-        placeholder="SEARCH"
-        autocomplete="on"
-      />
-    </div>
+
+    <form class="search-form" id="search-form" action="characters.html">
+      <div class="search-box">
+        <svg class="search-icon" width="16" height="16">
+          <use href="/vanilla-app-template/assets/icon-003d551d.svg#icon-search"></use>
+        </svg>
+        <input
+          type="query"
+          name="searchQuery"
+          class="header-input"
+          placeholder="SEARCH"
+          autocomplete="on"
+        />
+        <button class="search-btn" type="submit"></button>
+      </div>
+    </form>
   </div>
 </header>
 
@@ -87,12 +91,14 @@
     </div>
     <ul class="gallery">
       <li><img src="/vanilla-app-template/assets/black-panther-gallery-min-5c4433d3.jpg" /></li>
-      <h3>Characters</h3>
+    </ul>
+    <div class="hero-text-wrapper">
+      <h3 class="hero-title-gallery">Characters</h3>
       <p>
         With amazing spider-like abilities, teenage science whiz Peter Parker
         fights crime and dreams of becoming an Avenger as Spider-Man.
       </p>
-    </ul>
+    </div>
   </div>
 </section>
 

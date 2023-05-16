@@ -5,11 +5,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Page 2</title>
+    <script type="module" crossorigin src="/vanilla-app-template/assets/header-66cf62a7.js"></script>
   </head>
   <body>
     <section>
       <a href="./index.html">Go to home</a>
-      <h1>Welcome to page 2</h1>
+
       <header class="header">
   <div class="container wrap-header">
     <div class="logo-wrapper">
@@ -17,25 +18,32 @@
         <img src="../img/logo-min.png" width="98" height="15" />
       </a>
     </div>
-    <div class="search-box">
-      <svg class="search-icon" width="16" height="16">
-        <use href="/vanilla-app-template/assets/icon-003d551d.svg#icon-search"></use>
-      </svg>
-      <input
-        type="query"
-        name="searchQuery"
-        class="header-input"
-        placeholder="SEARCH"
-        autocomplete="on"
-      />
-    </div>
+
+    <form class="search-form" id="search-form" action="characters.html">
+      <div class="search-box">
+        <svg class="search-icon" width="16" height="16">
+          <use href="/vanilla-app-template/assets/icon-003d551d.svg#icon-search"></use>
+        </svg>
+        <input
+          type="query"
+          name="searchQuery"
+          class="header-input"
+          placeholder="SEARCH"
+          autocomplete="on"
+        />
+        <button class="search-btn" type="submit"></button>
+      </div>
+    </form>
   </div>
 </header>
 
       <h1>Hero-characters</h1>
 
       
+      <div class="characters-gallery"></div>
+
       
     </section>
+    
   </body>
 </html>
