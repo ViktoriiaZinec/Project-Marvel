@@ -5,17 +5,21 @@
         <img src="../img/logo-min.png" width="98" height="15" />
       </a>
     </div>
-    <div class="search-box">
-      <svg class="search-icon" width="16" height="16">
-        <use href="/img/icon.svg#icon-search"></use>
-      </svg>
-      <input
-        type="query"
-        name="searchQuery"
-        class="header-input"
-        placeholder="SEARCH"
-        autocomplete="on"
-      />
-    </div>
+
+    <form class="search-form" id="search-form" action="characters.html">
+      <div class="search-box">
+        <svg class="search-icon" width="16" height="16">
+          <use href="/img/icon.svg#icon-search"></use>
+        </svg>
+        <input
+          type="query"
+          name="searchQuery"
+          class="header-input"
+          placeholder="SEARCH"
+          autocomplete="on"
+        />
+        <button class="search-btn" type="submit"></button>
+      </div>
+    </form>
   </div>
 </header>
