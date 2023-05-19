@@ -16,22 +16,38 @@
       rel="stylesheet"
     />
     
-    <script type="module" crossorigin src="/vanilla-app-template/assets/header-66cf62a7.js"></script>
-    <link rel="stylesheet" href="/vanilla-app-template/assets/index-f10a68dd.css">
+    <script type="module" crossorigin src="/vanilla-app-template/assets/hero-gallery-1f3e9d08.js"></script>
+    <link rel="stylesheet" href="/vanilla-app-template/assets/hero-gallery-8c787dda.css">
   </head>
   <body>
     <header class="header">
   <div class="container wrap-header">
     <div class="logo-wrapper">
-      <a class="logo" href="../index.html">
-        <img src="../img/logo-min.png" width="98" height="15" />
+      <a id="logo" href="../index.html">
+        <!-- <img src="../img/logo-min.png" /> -->
+
+        <picture>
+          <source
+            srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGIAAAAQCAMAAADakVr2AAAABGdBTUEAALGPC/xhBQAAAAFzUkdCAK7OHOkAAAAJcEhZcwAACxMAAAsTAQCanBgAAADGUExURfn5+f////n5+fr6+vr6+vj4+Pf390dwTOscJPr6+vf39/r6+vn5+fr6+vf39/////r6+vT09Pr6+vj4+Pr6+vr6+vv7+/v7+/j4+Pv7+/v7+/v7+/n5+fr6+u0dJPOLj/fDxPBUWfJwdO85P/Wnqvnt7fje3/ns7e9HTPjR0vne3/J9gvN+ge85PvFiZvSZnPFiZ/a1uPjQ0vjf3+4rMe4qMfJ+gfa1t/FvdPBUWu9GTPN+gvSLj/fDxfa0t/JvdPWanPSMjweC8rsAAAAddFJOU4AfUO+/cEAAgN8gYKDPYBCQMJ+wMG+vQMB/v4+vv5o2kAAAApNJREFUOMu91MdyI1cMhWGoE4ymGKXRBPsHOjFnUmlmbI/9/i/lBem408JzqrD+CnXuhfzwtqiqypui4m/LdyLeGHGPaLcRT4sIryMOj3Hw53VELKJ2912z9Wbt26jd642rqibS01x6qokMx9ITSfJcExmLiPQKGar0csnLgUih+j4Xd3jdQRuX4XeOTgU0hPvPcPJq5jWxrcBVVTNMDTIdMRbuYGLc3DIAyIQbJTOwPkiZgbjDPqB9gUOwmc6ns5Y9p3pB+JZzx+FCrKZRu6pqH9TSEcWA5AEhL438lnLwiXfJleiPgKI0pBB3OL5AW61YB3XHfF6zpvKW8B1NS1fNvKZjf+0C48ZsyOSePDOhUCO7RfWWG70SWQmocqcq7jBbQjv9hX1QV7zwTM05PhMe1E5VzbxmP+Wru6re84nETK1fMkozYZIY6cN/iHtAipSPF4IpLNivjsGJ5TNHvly7CGqfXoho4Kur6ntycjPNTNMPjAQmBvZvwgxABim5uLOCOQ3r5SyAzzvAOTX/2GLuNeHtdO6qmpMwMtN+X/uQC+8Ks5S/iLFyZ/AhYzDWMk3FnWo6r9hQrQiC1xaWfu3iG69buoqnHWv3Fa6qI37izkzTTG+hEG7UbPQ30btnYlmWZqiqGuJOtawqOoCOA53D0Tk3X+jqx+npN5qO7sShqfjVVTUDzOwjPc1hfNmi+JMY0P+R3DIhpTfuZWTiTtUdK5Y8PbOkrua+IhxoAA84ew2cWzi3rqr9vj5gkKkOQAUmZsP0SgwNrLSsABCwUtyjqesmNuGLWEe7i6cmvnhELCLCvdk8ui9i8/i4qS+PVnqaiEiiqkPJtbj87oGoJjJULfO81Lw3FBEp8kK/yxn8/4/5HwE6d/Pn3QvYAAAAAElFTkSuQmCC 1x, data:image/png;base64,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 2x"
+            media="(max-width: 767px)"
+          />
+          <source
+            srcset="data:image/png;base64,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 1x, data:image/png;base64,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 2x"
+            media="(min-width: 768px)"
+          />
+          <source
+            srcset="data:image/png;base64,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 1x, data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAZQAAAA/CAMAAADwt84LAAAABGdBTUEAALGPC/xhBQAAAAFzUkdCAK7OHOkAAAAJcEhZcwAAFiUAABYlAUlSJPAAAADYUExURUdwTPn5+fr6+v////r6+vn5+ff39/r6+vv7+/r6+vr6+vf39/////f39/r6+vr6+vj4+PT09Pn5+fr6+vv7+/v7+/j4+Pn5+fv7+/v7+/r6+vz8/Pr6+u0dJPr6+vBUWfne3+85P/fDxPJvdPOLj/je3/WnqvSZnO4rMfnt7fjR0vns7fFvdO9GTO4qMfJ+ge85PvJwdPFiZ/a1uPa1t/FiZvJ9gu9HS/jf3/SMj/N+gfjQ0u9HTPOMj/SLj/fCxPnf3/WZnPWZnfN+gvWanPWnqffDxfa0t62Nx3YAAAAddFJOUwCgYBCfgEC/QN/vYB8gz5BwMFAwr4+wr3+/b19wETNLUAAAC9pJREFUeNrt3Gl7osgWAGAiUQQbt6SXuwhobNc20aid7nRPL3Nn7v3//+hGqbPVAuYZ58Nk4JMoIJ6X2k5V4g1ewOa9tO2loSR/8a1CqVCq6utvW31VKBVKhVKhVCgVSoVSoVQoFUqF8nJQZqnaVvn+CvZv5cep9vFanb+2nb1O+YZv3+pRXa9WbE98EVx4rZ+yXjtQrppq6x13fdj1+UHivVgd3+SbD2/H4hi6nnY0fK/6Ah+Ox9uJ1ScxP6+ncfjxlU8oNzDOH+UIOO7PgzPG/eFxf4T7y9Hm8MZdvrfIrzbP9+54AuH9YJDxS+Dj8Hl5uMwEg4yH828esxPSn1+eTvngQIngCy+Puy28gfY/IS5erN56ddzr5Dtdke945V3wy+BO05odaXheyPIk+LWXXkAHBbXDJ3V+3iUH6V6G+T0ZKHkwHjSUHe7fayiHU57iuVdEnHR5cwJKmsEBn09CWf9c5u84UHz8wlBDeXqnpsn1jzsqbg07SnQ2lKcbiJ0ozYAeFAMlOVYuew1lgfsfTJRkuRoM+dmpKnQnoNyzIz6Xo8wm2o0YKBS0yEBJknfqqLYqHHynZ0c5BPxcKEnyLztKM2BfbEFZyeoq5fXR0za1oCTLNRyxYqTbcpT1kh/ynzKUDTvcgdLlcTVQFAPEuMMzy54DpX5OlKhnQ3ktvtiC8kFWV0eUIZ2ztaE8tUQLdjYEshwlk7a3xSjf+MEOlA4d0beg5M890L059gxUk+NCCc6JkrRNFD9IylCmsrpKWX1EwdJRknTCgqdI70tRNtpVJoUowsSFcq2VCh3lGGKvz5qdJgA5UBL/nChJ20BpJ6UoWwoMovBuFEf5H+KM7lhY1bsruOjosP1uQcn0O74tQBGCWZbaUdgv7LDovL0QRSVmzU4XaimIWnDYfELpcpSrMN+g6c63UpS3Ok50/JauVnclYdvWJT5G40FDmbLThizs6WAPrc2G9ajVe3DR95oBokAB/GUG6r+4UdYo+P3x68w5eGR3+oZFp+bFIS8qETU7HajsRAXnEUrAUWALeKf6sBWjNLxeaCmxVGifmC5bsRw83oinda+h8NrqXqBgYB8pljMYs5ShTKh0jelQBwq4fU+LRvRX/KkTKF6Pt//Q46Lw9pwokX8OFK9hR4Ei1PGNET1DWYnqKpVNTJJ8lCjw8iPVbg9QD5ahZNRjm83xMwfKgspSAYqo8n2BAoHlvaka+XhOlMM7Z0CRzUugjWNrljTLjWhBdxqKqseNViOlqm1CEd9DHEtQFN4n3kp9dKLwg90oeQMRUTlgKFcsHHUCgs6XG6VzHpSuDaVpDu1tKFNRXaUUvf9SJoWhqDO3O6zdxvCqBGXDRz7UUbCjDFlHogAlbyACkmAoKkCRz4MGj2pQgBKdB6VvQ2mZBcWGsuVjxWPc9zyVtdRQYPg+xXI2gQ9LUKY8cfOAxxaijEpQ8hhchlgO+I/uUAGKsXw0sTQ4UZ7OOAdKswClXoLynqUj87grjT11Wy0oN3o5uy1DGbEkAH5nSfWFGTIHSl5x1a8xhByFvfaxL9DFfq8bpf7noTRhpF+MkvCx4jHu+aM/eqAgjoxiBJ9OIPbLQRlKxtJlWDqHLhToEf96W4CiYl27gHIgUGI2fgmhL9DBqLlRgj8PxdfTcg6U4Z2GkhNsZzSUNhv6LXaEB1jRqIsuN4ft3kDho1Hs4aUuFBwrvU/dKKotb9RxbMhRfBbZawjqNfbUoFmvHTafoyT+OVBEgiU8fkuD9cmCuAjlw1RDmauKaY4NM0PJ5KO8hNZhKi9qpllmMvojIHegsPybVlgYimpLey0MmWhII3pIccjYRj8tccJRaudACc30TMDzQFG3AOXjSKLMoLe6wDwMoXzD41T363aPndtilKGM/qQEhacV3q8dKOphhJqioTWkoTGo7HpUmxSgXJ4B5V1iReHDl9dulEkmUVLoJe0wXIAy+y3B2S0VtNUdnngSyuhUlNnCoWKkIyNoPWoaSptQrmAcTe1MAUr0h1H814kDJY70lsaG8imRKHt4NcU+sQrvkud3b2Tld3tulMGQqXyxowRyzNERo0SMJGtf3jQp6ViAkoR/ECWyL7I/IsShVlY0FBqgzAllDLG8w6Aa6d0hjjRU5bccnIiysKMsbZNcU31CTEeJIBMZwgsXijqi3aI6344S2advn4nCLmH2weK2nO/RUL7ghwtC2UEv6QZHezrKlBruyQILwLPalJ1ESazTwemPJJFoAoXqogAqKieKqunqNKC0o1w+D8UXKB0D5bJu6xh3kf6tiTLCaE8IZQHBe8AmXENZsJHGlqZloPhlh210Wu8rLUQZzKZynlqiUF10AeGvmw19wqco/0FviSkSRKlFz0J5JXocdR0l9NUn0fFb3uL6moClpHUUXJjwSL99Do/+DIuFNo07G+i55GMy+UZbiaKNU+bikcdxylwcNWG5aZ4kY+8YE/R9DMoriRKxZS5dXju1CSX05OCx1nkWSq8Q5SnkdUuyiy896pkouGLiHlGG9OjP4ZVtbn0wSbRplxIUx4g+49kXqtVwm+qpSWOCnnrCfYHiJyQgpzfeFKA0noXSF3dilBQ3Ckwh1EwUbAaGiJJSaDOtdYDuQDrQJ42PMS1B2dlzX5lgGBkoN24UGp33oSLjKE3RuvK7rRegeNFJKIFYLnOto4RwNSfKtRMFLBaEomK922w2C3i2Mxin8Oz7PtGm8ktQpjzeKbZOmaie5jyVXFZS4GGr1f4NQeQoXb6wiMc6f75dKBfPQelojz2OUyJ5QyZK4ESBIGwJZWr0rleIMhixdmGoN/0lKDf2+ZQFX8u0Npp1yuuYKMadtgXKtahh+CKSXhFK4zkogbiTPo3o1WSOEyWmPrGBspDzFxh3ubon08T0JXt5SEtQRJ9Y1WUbrLCWovTRCphviV52rBP0iYxBnf3s2MgCJ14Rih+dgnLB5qAxIdwglK7IlZoobTrfQFGt9T2hLIyfOiaUlM+cL/gh5Sh0FTFHP+GFY6KPSn5LDCb7BL36iQylpY0NeIEqQmF8BSgdPtl+iRFGFFXeOnYUXJAXWsYpUI2sCMX8pRMK52zOciUTbc1LGcqYWodvlHO5S+j1OpG5mPRLkhhTkLYlq1gvEUocynD09TGcE6V/CkqLAcf0mhKSqj9uQ/HfRXyxmoGi6gtsINIH85cu2DM+Yv3aO9n5wn4S/MGJa93XZ3y14csxP89wSf6h3Vnf/2Q98Y0FpWPeag1R/LYW9Fhbtgco8BcnhOJHJ6Bg3fk6boZ0OKEEIkNQh79P8ePaa9bniG0oQxV2RNmbv3TJUMasr7SXSx1daRai0ZurT0NWk2lpUe1IW0IyME+E2qLebBtreSgUNbOb0OCrkIITUDxLzrHPUbqWXFqgV7l1z4aSt9ZbQhF5DnjWMz2vP5Ldr8XgJJRU+xG/2BcqHwnEG/OhDSViTW3LlmrC5kPrfjVKUFqnoJjlNPQ4ypU1S9w0zrChLOREH6zcvhe5kEyfluQL5rHGL0XhC8wOsZ8NBhaqvK4SJl9tk1w+Lgii2iTUUMLYM/pLkEV0o2D9VYTSM+tOgWIrShqKujsTZZITIIpYcwL59cxYIZmKBdvTE1FmP/hbX2UWX+SgOcqnr9bpYL7YDoXqThOaM4+8EhSsv4pQjKISeBLlogwlsK8lHqnWmv40K53zDJWqy6aZvv4oD9wuEdnCcpTB8Iel7Z7JXvj3mUSZzuwLJ/oicJEl8y5MqFIKSlG6p6BoUW/7Gkq3GAWn6C0o+zxJMpSJyaU4bMtQHtgBWl79BBRS+cQXqbAswnws1r7Mx0PXEiOREIYWg43bo7p9DA2pkQIU/yQUvl4lqvuehhIXoQR15wLvUa6xIJSxGBbAOkaGMmBJyRvR+ToJZTDY7ObJ/PtYPv7Dx+PUTrZ7nOGCpOzL749fC1ZIyiyKnDiM2pcNX//7aLiVbikK9meLUby4FRyegpBCzFAsy1kOKFH4ttOKq39uUP3HiQqlQqlQKpQKpUKpUCqUCqVCqVAqlL81SvIX37yXuL0ElP8DuY0eMlzpXO4AAAAASUVORK5CYII= 2x"
+          />
+
+          <img src="data:image/png;base64,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" class="logo" alt="Logo" />
+        </picture>
       </a>
     </div>
 
     <form class="search-form" id="search-form" action="characters.html">
       <div class="search-box">
         <svg class="search-icon" width="16" height="16">
-          <use href="/vanilla-app-template/assets/icon-003d551d.svg#icon-search"></use>
+          <use href="/vanilla-app-template/assets/icon-1989c1d2.svg#icon-search"></use>
         </svg>
         <input
           type="query"
@@ -47,65 +63,251 @@
 </header>
 
     <section class="hero">
-  <div class="container">
-    <h2 class="hero-h2">Web-based platform</h2>
-    <h1 class="hero-main-title">Marvelous Adventures</h1>
-    <p class="hero-text">
-      is a web-based platform that provides an immersive experience for users to
-      explore and discover a vast collection of Marvel characters and comics.
-      Start exploring the Marvelous Adventures now by visiting our Characters
-      and Comics sections and discover your new favorites today.
-    </p>
-    <a href="#" class="hero-all-characters-btn hero-all-characters-btn-blue">
-      All characters
-    </a>
-    <div hero-wrapper-img>
-      <div class="line-first">
-        <picture class="line-second">
-          <source
-            srcset="/vanilla-app-template/assets/black-panther-min-06d4abd7.jpg 1x, /vanilla-app-template/assets/black-panther@2x-min-43c08122.jpg 2x"
-            media="(max-width: 767px)"
-          />
-          <source
-            srcset="
-              ../img/tablet/black-panther-min.jpg    1x,
-              ../img/tablet/black-panther@2x-min.jpg 2x
-            "
-            media="(min-width: 768px)"
-          />
-          <source
-            srcset="
-              ../img/desktop/black-panther-desktop-min.jpg    1x,
-              ../img/desktop/black-panther@2x-desctop-min.jpg 2x
-            "
-          />
-
-          <img
-            src="../img/desktop/black-panther-desktop-min.jpg"
-            class="hero-image-main"
-            width="352"
-            alt="Black Panther"
-          />
-        </picture>
-      </div>
-    </div>
-    <ul class="gallery">
-      <li><img src="/vanilla-app-template/assets/black-panther-gallery-min-5c4433d3.jpg" /></li>
-    </ul>
-    <div class="hero-text-wrapper">
-      <h3 class="hero-title-gallery">Characters</h3>
-      <p>
-        With amazing spider-like abilities, teenage science whiz Peter Parker
-        fights crime and dreams of becoming an Avenger as Spider-Man.
+  <div class="container hero-container">
+    <div class="hero-desription">
+      <h3 class="hero-h3">Web-based platform</h3>
+      <h1 class="hero-main-title">Marvelous Adventures</h1>
+      <p class="hero-text">
+        is a web-based platform that provides an immersive experience for users
+        to explore and discover a vast collection of Marvel characters and
+        comics. Start exploring the Marvelous Adventures now by visiting our
+        Characters and Comics sections and discover your new favorites today.
       </p>
+      <a href="#" class="hero-all-characters-btn hero-all-characters-btn-blue">
+        All characters
+      </a>
+    </div>
+    <div class="hero-slyder">
+      <div class="hero-gallery-line-wrapper">
+        <ul class="hero-pagination">
+          <li class="line hero-pagination-item activeLine" data-index="0"></li>
+          <li class="line hero-pagination-item" data-index="1"></li>
+          <li class="line third hero-pagination-item" data-index="2"></li>
+        </ul>
+
+        <div class="slider-container">
+          <div class="left-slide swiper mySwiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide" data-swiper-autoplay="2000">
+                <picture>
+                  <source
+                    srcset="/vanilla-app-template/assets/black-panther-min-06d4abd7.jpg 1x, /vanilla-app-template/assets/black-panther@2x-min-43c08122.jpg 2x"
+                    media="(max-width: 767px)"
+                  />
+                  <source
+                    srcset="/vanilla-app-template/assets/black-panther-min-fcffd4a1.jpg 1x, /vanilla-app-template/assets/black-panther@2x-min-cb984c0b.jpg 2x"
+                    media="(min-width: 768px)"
+                  />
+                  <source
+                    srcset="/vanilla-app-template/assets/black-panther-desktop-min-83eeabc3.jpg 1x, /vanilla-app-template/assets/black-panther@2x-desctop-min-52a1141c.jpg 2x"
+                  />
+
+                  <img
+                    src="/vanilla-app-template/assets/black-panther-desktop-min-83eeabc3.jpg"
+                    class="hero-image-main"
+                    width="352"
+                    alt="Black Panther"
+                  />
+                </picture>
+              </div>
+              <div class="swiper-slide" data-swiper-autoplay="2000">
+                <picture>
+                  <source
+                    srcset="/vanilla-app-template/assets/black-panther-min-06d4abd7.jpg 1x, /vanilla-app-template/assets/black-panther@2x-min-43c08122.jpg 2x"
+                    media="(max-width: 767px)"
+                  />
+                  <source
+                    srcset="/vanilla-app-template/assets/hulk-min-34351bc2.jpg 1x, /vanilla-app-template/assets/hulk@2x-min-62710e46.jpg 2x"
+                    media="(min-width: 768px)"
+                  />
+                  <source
+                    srcset="
+                      /img/desktop/hulk-desktop-min.jpg    1x,
+                      /img/desktop/hulk@2x-desctop-min.jpg 2x
+                    "
+                  />
+
+                  <img
+                    src="/vanilla-app-template/assets/hulk-desktop-min-77fb6a29.jpg"
+                    class="hero-image-main"
+                    width="352"
+                    alt="Hulk"
+                  />
+                </picture>
+              </div>
+              <div class="swiper-slide" data-swiper-autoplay="2000">
+                <picture>
+                  <source
+                    srcset="/vanilla-app-template/assets/black-panther-min-06d4abd7.jpg 1x, /vanilla-app-template/assets/black-panther@2x-min-43c08122.jpg 2x"
+                    media="(max-width: 767px)"
+                  />
+                  <source
+                    srcset="/vanilla-app-template/assets/spiderman-min-cf8f876f.jpg 1x, /vanilla-app-template/assets/spiderman@2x-min-2229fabd.jpg 2x"
+                    media="(min-width: 768px)"
+                  />
+                  <source
+                    srcset="
+                      /img/desktop/spiderman-desktop-min.jpg   1x,
+                      /img/desktopspiderman@2x-desctop-min.jpg 2x
+                    "
+                  />
+
+                  <img
+                    src="/vanilla-app-template/assets/spiderman-desktop-min-064bfdc2.jpg"
+                    class="hero-image-main"
+                    width="352"
+                    alt="Spiderman"
+                  />
+                </picture>
+              </div>
+            </div>
+            <div class="swiper-pagination"></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="hero-gallery-second-slyde-wrapper">
+        <div class="right-slide swiper mySwiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <a href="/characters.html?searchQuery=black+panther">
+                <svg class="hero-arrow arrow-blue">
+                  <use href="/vanilla-app-template/assets/icon-1989c1d2.svg#icon-arrow1"></use>
+                </svg>
+              </a>
+              <div class="circle-block blue-circle"><p>Black Panther</p></div>
+              <picture>
+                <source
+                  srcset="/vanilla-app-template/assets/black-panther-gallery-min-5c4433d3.jpg 1x, /vanilla-app-template/assets/black-panther-gallery@2x-min-f4be9ef1.jpg 2x"
+                  media="(max-width: 767px)"
+                />
+                <source
+                  srcset="/vanilla-app-template/assets/black-panther-gallery-min-95dfe3f9.jpg 1x, /vanilla-app-template/assets/black-panther@2x-gallery-min-ffb6d735.jpg 2x"
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="
+                    /img/desktop/black-panther-gallery-desktop-min.jpg    1x,
+                    /img/desktop/black-panther-gallery@2x-desctop-min.jpg 2x
+                  "
+                />
+
+                <img
+                  src="/vanilla-app-template/assets/black-panther-gallery-desktop-min-467c33f6.jpg"
+                  class="hero-image-main"
+                  width="352"
+                  alt="Black Panther"
+                />
+              </picture>
+            </div>
+            <div class="swiper-slide">
+              <a href="/characters.html?searchQuery=hulk">
+                <svg class="hero-arrow arrow-green">
+                  <use href="/vanilla-app-template/assets/icon-1989c1d2.svg#icon-arrow1"></use>
+                </svg>
+              </a>
+              <div class="circle-block green-circle"><p>Hulk</p></div>
+              <picture>
+                <source
+                  srcset="/vanilla-app-template/assets/black-panther-gallery-min-5c4433d3.jpg 1x, /vanilla-app-template/assets/black-panther-gallery@2x-min-f4be9ef1.jpg 2x"
+                  media="(max-width: 767px)"
+                />
+                <source
+                  srcset="/vanilla-app-template/assets/hulk-gallery-min-ac05f8d6.jpg 1x, /vanilla-app-template/assets/hulk-gallery@2x-min-b5e29017.jpg 2x"
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="/vanilla-app-template/assets/hulk-gallery-desktop-min-4f5ae86f.jpg 1x, /vanilla-app-template/assets/hulk-gallery@2x-desktop-min-f13d1593.jpg 2x"
+                />
+
+                <img
+                  src="/vanilla-app-template/assets/hulk-gallery-desktop-min-4f5ae86f.jpg"
+                  class="hero-image-main"
+                  width="352"
+                />
+              </picture>
+            </div>
+            <div class="swiper-slide">
+              <a href="/characters.html?searchQuery=spider">
+                <svg class="hero-arrow arrow-bordo">
+                  <use href="/vanilla-app-template/assets/icon-1989c1d2.svg#icon-arrow1"></use>
+                </svg>
+              </a>
+              <div class="circle-block bordo-circle">
+                <p>
+                  Spider <br />
+                  Man
+                </p>
+              </div>
+              <picture>
+                <source
+                  srcset="/vanilla-app-template/assets/black-panther-gallery-min-5c4433d3.jpg 1x, /vanilla-app-template/assets/black-panther-gallery@2x-min-f4be9ef1.jpg 2x"
+                  media="(max-width: 767px)"
+                />
+                <source
+                  srcset="/vanilla-app-template/assets/spiderman-gallery-min-fba0295d.jpg 1x, /vanilla-app-template/assets/spiderman@2x-gallery-min-4c0f1667.jpg 2x"
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="/vanilla-app-template/assets/spiderman-gallery-desktop-min-a5b25780.jpg 1x, /vanilla-app-template/assets/spiderman-gallery@2x-desktop-min-7d8eade6.jpg 2x"
+                />
+
+                <img
+                  src="/vanilla-app-template/assets/spiderman-gallery-desktop-min-a5b25780.jpg"
+                  class="hero-image-main"
+                  width="352"
+                  alt="Spiderman"
+                />
+              </picture>
+            </div>
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
+
+        <img class="lineHorisontal" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAO0AAAAGBAMAAADd4AT9AAAABGdBTUEAALGPC/xhBQAAAAFzUkdCAK7OHOkAAAAJcEhZcwAACxMAAAsTAQCanBgAAAAeUExURfLy8kdwTPj4+PT09P////b29v///////////////9pt0eMAAAAKdFJOUxMAJhgJHBwHBAVdiH+ZAAAANklEQVQoz2OwEBwAIGLAoGQ+ANYmKTAoKSUw0BskKYHsDaC7vUEge0PoH87iRgoMJgORriQNAF65I8RwWQwtAAAAAElFTkSuQmCC" />
+        <div class="hero-text-wrapper">
+          <h3 class="hero-title-gallery">Characters</h3>
+          <p>
+            With amazing spider-like abilities, teenage science whiz Peter
+            Parker fights crime and dreams of becoming an Avenger as Spider-Man.
+          </p>
+        </div>
+      </div>
     </div>
   </div>
 </section>
 
-    <h1>Hero-characters</h1>
 
-    
-    
+    <h2 class="random-characters">Random characters</h2>
+<h3 class="title-random-characters">Ant-Man</h3>
+<p class="description-random">
+  Thief turned hero Scott Lang uses size manipulation tech to infiltrate bases
+  and intimidate bad guys.
+</p>
+<h3 class="title-random-characters">The Wasp</h3>
+<p class="description-random">
+  Hope Van Dyne, daughter of the brilliant and heroic Ant-Man (Hank Pym) and The
+  Wasp (Janet van Dyne), helps trains her father’s successor Scott Lang and
+  secure the destruction of the Yellowjacket technology.
+</p>
+<h3 class="title-random-characters">Cassie Lang</h3>
+<p class="description-random">
+  As Scott Lang’s young daughter, Cassie is super proud of her dad’s heroics as
+  Ant-Man.
+</p>
+<h3 class="title-random-characters">Kang The Conqueror</h3>
+<p class="description-random">
+  The character is most frequently depicted as an opponent of the Avengers and
+  the Fantastic Four.
+</p>
+<h3 class="title-random-characters">Hank Pym</h3>
+<p class="description-random">
+  Hank Pym is a brilliant scientist who used his discovery of the shrinking Pym
+  Particles, the suit that could survive the process, and insect communication
+  waves, to turn himself into the original Ant-Man.
+</p>
+
+
     
 
     <!-- Loads the specified .html file -->
