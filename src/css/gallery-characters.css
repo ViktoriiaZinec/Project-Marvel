@@ -1,0 +1,45 @@
+.characters-gallery {
+  width: 335px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.wrapper-gallery-item {
+  margin-bottom: 40px;
+}
+
+#characters-gallery-item {
+  width: 335px;
+  height: 445px;
+  object-fit: cover;
+  margin-bottom: 16px;
+}
+#character-name {
+  font-size: 18px;
+  line-height: 1.3;
+}
+@media screen and (min-width: 768px) {
+  .characters-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 32px;
+    min-width: 768px;
+  }
+
+  #character-name {
+    max-width: 336px;
+
+    line-height: 1;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .characters-gallery {
+    gap: 64px 16px;
+    min-width: 1440px;
+  }
+  #characters-gallery-item {
+    width: 332px;
+    height: 485px;
+  }
+}

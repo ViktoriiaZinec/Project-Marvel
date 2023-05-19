@@ -1,9 +1,16 @@
 .header {
   padding: 20px 0;
   position: sticky;
+  background-color: transparent;
   top: 0px;
   left: 0px;
   z-index: 1000;
+  margin-bottom: 22px;
+}
+
+#logo {
+  width: 98px;
+  height: 15px;
 }
 
 .wrap-header {
@@ -11,9 +18,11 @@
   justify-content: space-between;
   align-items: center;
 }
+
 .search-box {
   position: relative;
   width: 108px;
+
   /* order: -1; */
 }
 .active {
@@ -43,7 +52,6 @@
   width: 16px;
   height: 16px;
   left: 18px;
-
   top: 6px;
   fill: var(--main-color);
   transition: fill 0.1s linear;
@@ -63,11 +71,42 @@
 }
 
 .header-input:focus + .input__icon {
-  fill: #f39c12;
+  fill: var(--blue-btn);
 }
 
 .search-icon {
   width: 16px;
   height: 16px;
   fill: var(--main-color);
+}
+
+@media screen and (min-width: 1440px) {
+  /* .logo {
+    width: 202px;
+  } */
+  /* .search-box {
+    width: 130px;
+  } */
+}
+@media screen and (min-width: 768px) {
+  /* .logo {
+    width: 202px;
+    height: 31px;
+  } */
+  .header-input {
+    width: 130px;
+    font-size: 14px;
+  }
+  .search-icon {
+    top: 10px;
+  }
+  .search-box {
+    margin-right: 32px;
+  }
+
+  .hero-h3 {
+    font-size: 18px;
+    margin-bottom: 16px;
+    margin-top: 70px;
+  }
 }

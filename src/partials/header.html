@@ -1,8 +1,24 @@
 <header class="header">
   <div class="container wrap-header">
     <div class="logo-wrapper">
-      <a class="logo" href="../index.html">
-        <img src="../img/logo-min.png" width="98" height="15" />
+      <a id="logo" href="../index.html">
+        <!-- <img src="../img/logo-min.png" /> -->
+
+        <picture>
+          <source
+            srcset="/img/logo-mobile-min.png 1x, /img/logo2x-mobile-min.png 2x"
+            media="(max-width: 767px)"
+          />
+          <source
+            srcset="/img/logo-min.png 1x, /img/logo2x-desktop-min.png 2x"
+            media="(min-width: 768px)"
+          />
+          <source
+            srcset="/img/logo-min.png 1x, /img/logo2x-desktop-min.png 2x"
+          />
+
+          <img src="/img/logo-min.png" class="logo" alt="Logo" />
+        </picture>
       </a>
     </div>
 

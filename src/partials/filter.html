@@ -1,0 +1,54 @@
+<section class="filter">
+  <div class="container">
+    <form class="form-filter">
+      <label class="label-filter" for="comics-enter-text">Comics</label>
+      <input
+        type="text"
+        class="input-style"
+        id="comics-enter-text"
+        name="comicsName"
+        placeholder="Enter text"
+      />
+      <svg class="search-filter-icon" width="16" height="16">
+        <use href="/img/icon.svg#icon-search"></use>
+      </svg>
+
+      <label class="label-filter label-select" for="name-starts-with">
+        Name starts with</label
+      >
+      <input
+        type="query"
+        class="input-style"
+        name="searchQuery"
+        placeholder="Enter text"
+        autocomplete="on"
+      />
+      <svg class="search-filter-icon search-icon-order" width="16" height="16">
+        <use href="/img/icon.svg#icon-search"></use>
+      </svg>
+
+      <label class="label-filter label-select" for="comics-order-by"
+        >Order by</label
+      >
+      <select name="order" class="input-style" id="order">
+        <option value="comics-name">Name</option>
+        <option value="modified">Modified</option>
+        <option value="-name">-name</option>
+        <option value="-modified">-modified</option>
+      </select>
+      <svg class="arrow-down-icon" width="16" height="16">
+        <use href="/img/icon.svg#icon-arrow-down "></use>
+      </svg>
+
+      <label class="label-filter" for="comics-data">Data</label>
+      <select class="input-style" name="data" id="data">
+        <option value="date">get date from API</option>
+        <option value="date">date2</option>
+      </select>
+      <svg class="arrow-down-icon down-data" width="16" height="16">
+        <use href="/img/icon.svg#icon-arrow-down "></use>
+      </svg>
+      <button type="submit">Submit</button>
+    </form>
+  </div>
+</section>

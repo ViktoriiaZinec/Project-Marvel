@@ -1,0 +1,41 @@
+.hero-characters {
+  background-image: url(../img/mobile/background-hero-min.png);
+  background-size: cover;
+  height: 509px;
+  background-repeat: no-repeat;
+  background-position: center;
+  margin-top: -65px;
+  padding-top: 220px;
+}
+.hero-h2-characters {
+  font-size: 14px;
+  line-height: 1.2px;
+  text-transform: uppercase;
+  margin-bottom: 14px;
+}
+.hero-characres-title {
+  font-size: 60px;
+  line-height: 1;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 16px;
+}
+
+.hero-characters-text {
+  font-size: 16px;
+  line-height: 1.4;
+}
+
+@media screen and (min-width: 768px) {
+  .hero-characters {
+    background-image: url(../img/tablet/background-hero-min.png);
+    height: 780px;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .hero-characters {
+    background-image: url(../img/desktop/background-hero-desktop-min.png);
+    height: 780px;
+  }
+}

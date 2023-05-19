@@ -1,58 +1,259 @@
 <section class="hero">
-  <div class="container">
-    <h2 class="hero-h2">Web-based platform</h2>
-    <h1 class="hero-main-title">Marvelous Adventures</h1>
-    <p class="hero-text">
-      is a web-based platform that provides an immersive experience for users to
-      explore and discover a vast collection of Marvel characters and comics.
-      Start exploring the Marvelous Adventures now by visiting our Characters
-      and Comics sections and discover your new favorites today.
-    </p>
-    <a href="#" class="hero-all-characters-btn hero-all-characters-btn-blue">
-      All characters
-    </a>
-    <div hero-wrapper-img>
-      <div class="line-first">
-        <picture class="line-second">
-          <source
-            srcset="
-              /img/mobile/black-panther-min.jpg    1x,
-              /img/mobile/black-panther@2x-min.jpg 2x
-            "
-            media="(max-width: 767px)"
-          />
-          <source
-            srcset="
-              ../img/tablet/black-panther-min.jpg    1x,
-              ../img/tablet/black-panther@2x-min.jpg 2x
-            "
-            media="(min-width: 768px)"
-          />
-          <source
-            srcset="
-              ../img/desktop/black-panther-desktop-min.jpg    1x,
-              ../img/desktop/black-panther@2x-desctop-min.jpg 2x
-            "
-          />
-
-          <img
-            src="../img/desktop/black-panther-desktop-min.jpg"
-            class="hero-image-main"
-            width="352"
-            alt="Black Panther"
-          />
-        </picture>
-      </div>
-    </div>
-    <ul class="gallery">
-      <li><img src="/img/mobile/black-panther-gallery-min.jpg" /></li>
-    </ul>
-    <div class="hero-text-wrapper">
-      <h3 class="hero-title-gallery">Characters</h3>
-      <p>
-        With amazing spider-like abilities, teenage science whiz Peter Parker
-        fights crime and dreams of becoming an Avenger as Spider-Man.
+  <div class="container hero-container">
+    <div class="hero-desription">
+      <h3 class="hero-h3">Web-based platform</h3>
+      <h1 class="hero-main-title">Marvelous Adventures</h1>
+      <p class="hero-text">
+        is a web-based platform that provides an immersive experience for users
+        to explore and discover a vast collection of Marvel characters and
+        comics. Start exploring the Marvelous Adventures now by visiting our
+        Characters and Comics sections and discover your new favorites today.
       </p>
+      <a href="#" class="hero-all-characters-btn hero-all-characters-btn-blue">
+        All characters
+      </a>
+    </div>
+    <div class="hero-slyder">
+      <div class="hero-gallery-line-wrapper">
+        <ul class="hero-pagination">
+          <li class="line hero-pagination-item activeLine" data-index="0"></li>
+          <li class="line hero-pagination-item" data-index="1"></li>
+          <li class="line third hero-pagination-item" data-index="2"></li>
+        </ul>
+
+        <div class="slider-container">
+          <div class="left-slide swiper mySwiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide" data-swiper-autoplay="2000">
+                <picture>
+                  <source
+                    srcset="
+                      /img/mobile/black-panther-min.jpg    1x,
+                      /img/mobile/black-panther@2x-min.jpg 2x
+                    "
+                    media="(max-width: 767px)"
+                  />
+                  <source
+                    srcset="
+                      /img/tablet/black-panther-min.jpg    1x,
+                      /img/tablet/black-panther@2x-min.jpg 2x
+                    "
+                    media="(min-width: 768px)"
+                  />
+                  <source
+                    srcset="
+                      /img/desktop/black-panther-desktop-min.jpg    1x,
+                      /img/desktop/black-panther@2x-desctop-min.jpg 2x
+                    "
+                  />
+
+                  <img
+                    src="/img/desktop/black-panther-desktop-min.jpg"
+                    class="hero-image-main"
+                    width="352"
+                    alt="Black Panther"
+                  />
+                </picture>
+              </div>
+              <div class="swiper-slide" data-swiper-autoplay="2000">
+                <picture>
+                  <source
+                    srcset="
+                      /img/mobile/black-panther-min.jpg    1x,
+                      /img/mobile/black-panther@2x-min.jpg 2x
+                    "
+                    media="(max-width: 767px)"
+                  />
+                  <source
+                    srcset="
+                      /img/tablet/hulk-min.jpg    1x,
+                      /img/tablet/hulk@2x-min.jpg 2x
+                    "
+                    media="(min-width: 768px)"
+                  />
+                  <source
+                    srcset="
+                      /img/desktop/hulk-desktop-min.jpg    1x,
+                      /img/desktop/hulk@2x-desctop-min.jpg 2x
+                    "
+                  />
+
+                  <img
+                    src="/img/desktop/hulk-desktop-min.jpg"
+                    class="hero-image-main"
+                    width="352"
+                    alt="Hulk"
+                  />
+                </picture>
+              </div>
+              <div class="swiper-slide" data-swiper-autoplay="2000">
+                <picture>
+                  <source
+                    srcset="
+                      /img/mobile/black-panther-min.jpg    1x,
+                      /img/mobile/black-panther@2x-min.jpg 2x
+                    "
+                    media="(max-width: 767px)"
+                  />
+                  <source
+                    srcset="
+                      /img/tablet/spiderman-min.jpg    1x,
+                      /img/tablet/spiderman@2x-min.jpg 2x
+                    "
+                    media="(min-width: 768px)"
+                  />
+                  <source
+                    srcset="
+                      /img/desktop/spiderman-desktop-min.jpg   1x,
+                      /img/desktopspiderman@2x-desctop-min.jpg 2x
+                    "
+                  />
+
+                  <img
+                    src="/img/desktop/spiderman-desktop-min.jpg"
+                    class="hero-image-main"
+                    width="352"
+                    alt="Spiderman"
+                  />
+                </picture>
+              </div>
+            </div>
+            <div class="swiper-pagination"></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="hero-gallery-second-slyde-wrapper">
+        <div class="right-slide swiper mySwiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <a href="/characters.html?searchQuery=black+panther">
+                <svg class="hero-arrow arrow-blue">
+                  <use href="/img/icon.svg#icon-arrow1"></use>
+                </svg>
+              </a>
+              <div class="circle-block blue-circle"><p>Black Panther</p></div>
+              <picture>
+                <source
+                  srcset="
+                    /img/mobile/black-panther-gallery-min.jpg    1x,
+                    /img/mobile/black-panther-gallery@2x-min.jpg 2x
+                  "
+                  media="(max-width: 767px)"
+                />
+                <source
+                  srcset="
+                    /img/tablet/black-panther-gallery-min.jpg    1x,
+                    /img/tablet/black-panther@2x-gallery-min.jpg 2x
+                  "
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="
+                    /img/desktop/black-panther-gallery-desktop-min.jpg    1x,
+                    /img/desktop/black-panther-gallery@2x-desctop-min.jpg 2x
+                  "
+                />
+
+                <img
+                  src="/img/desktop/black-panther-gallery-desktop-min.jpg"
+                  class="hero-image-main"
+                  width="352"
+                  alt="Black Panther"
+                />
+              </picture>
+            </div>
+            <div class="swiper-slide">
+              <a href="/characters.html?searchQuery=hulk">
+                <svg class="hero-arrow arrow-green">
+                  <use href="/img/icon.svg#icon-arrow1"></use>
+                </svg>
+              </a>
+              <div class="circle-block green-circle"><p>Hulk</p></div>
+              <picture>
+                <source
+                  srcset="
+                    /img/mobile/black-panther-gallery-min.jpg    1x,
+                    /img/mobile/black-panther-gallery@2x-min.jpg 2x
+                  "
+                  media="(max-width: 767px)"
+                />
+                <source
+                  srcset="
+                    /img/tablet/hulk-gallery-min.jpg    1x,
+                    /img/tablet/hulk-gallery@2x-min.jpg 2x
+                  "
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="
+                    /img/desktop/hulk-gallery-desktop-min.jpg    1x,
+                    /img/desktop/hulk-gallery@2x-desktop-min.jpg 2x
+                  "
+                />
+
+                <img
+                  src="/img/desktop/hulk-gallery-desktop-min.jpg"
+                  class="hero-image-main"
+                  width="352"
+                />
+              </picture>
+            </div>
+            <div class="swiper-slide">
+              <a href="/characters.html?searchQuery=spider">
+                <svg class="hero-arrow arrow-bordo">
+                  <use href="/img/icon.svg#icon-arrow1"></use>
+                </svg>
+              </a>
+              <div class="circle-block bordo-circle">
+                <p>
+                  Spider <br />
+                  Man
+                </p>
+              </div>
+              <picture>
+                <source
+                  srcset="
+                    /img/mobile/black-panther-gallery-min.jpg    1x,
+                    /img/mobile/black-panther-gallery@2x-min.jpg 2x
+                  "
+                  media="(max-width: 767px)"
+                />
+                <source
+                  srcset="
+                    /img/tablet/spiderman-gallery-min.jpg    1x,
+                    /img/tablet/spiderman@2x-gallery-min.jpg 2x
+                  "
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="
+                    /img/desktop/spiderman-gallery-desktop-min.jpg    1x,
+                    /img/desktop/spiderman-gallery@2x-desktop-min.jpg 2x
+                  "
+                />
+
+                <img
+                  src="/img/desktop/spiderman-gallery-desktop-min.jpg"
+                  class="hero-image-main"
+                  width="352"
+                  alt="Spiderman"
+                />
+              </picture>
+            </div>
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
+
+        <img class="lineHorisontal" src="/img/mobile/Line.png" />
+        <div class="hero-text-wrapper">
+          <h3 class="hero-title-gallery">Characters</h3>
+          <p>
+            With amazing spider-like abilities, teenage science whiz Peter
+            Parker fights crime and dreams of becoming an Avenger as Spider-Man.
+          </p>
+        </div>
+      </div>
     </div>
   </div>
 </section>

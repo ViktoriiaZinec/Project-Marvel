@@ -1,4 +1,4 @@
 import './js/header';
 import './js/fetchFn';
-
-// import './js/header';
+import './js/characters-gallery';
+import './js/hero-gallery';

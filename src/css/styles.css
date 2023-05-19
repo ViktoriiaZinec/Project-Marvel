@@ -9,9 +9,10 @@
 @import url('./random-characters.css');
 @import url('./reset.css');
 @import url('./footer.css');
-@import url('./gallery.css');
+@import url('./gallery-characters.css');
+@import url('./hero-characters.css');
 @import url('./vite-promo.css');
-
+@import url('./elements.css');
 
 :root {
   font-family: Inter, Avenir, Helvetica, Arial, sans-serif;
@@ -62,7 +63,7 @@ a {
 }
 
 h1 {
-  font-weight: 500;  
+  font-weight: 500;
 }
 
 h1,
@@ -83,7 +84,7 @@ ol {
 }
 
 img {
-  display: block;  
+  display: block;
 }
 
 button {
